@@ -1,0 +1,23 @@
+{
+  "name": "cse341",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camwoodward3/cse341.git"
+  },
+  "author": "Cam Woodward",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/camwoodward3/cse341/issues"
+  },
+  "homepage": "https://github.com/camwoodward3/cse341#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
