@@ -1,0 +1,26 @@
+{
+  "contact": {
+    "firstName": "Isaac",
+    "lastName": "Cieslak",
+    "email": "isaaccieslak@test.com",
+    "favoriteColor": "Green",
+    "birthday": "12/28/2003" 
+  },
+  "contact2": {
+    "firstName": "Sam",
+    "lastName": "Mabey",
+    "email": "sammabey@test.com",
+    "favoriteColor": "Purple",
+    "birthday": "09/15/2003"
+  },
+
+  "contact3": {
+    "firstName": "Bella",
+    "lastName": "Beeson",
+    "email": "bellabeeson@test.com",
+    "favoriteColor": "Pink",
+    "birthday": "07/02/2002"
+  }
+
+
+}

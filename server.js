@@ -1,9 +1,26 @@
-var express = require('express');
-var app = express();
-const port = process.env.PORT || 3000;
+const express = require('express');
+const path = require('path');
+const cors = require('cors');
+const app = express();
+const mongodb = require('./db/connect');
+const port = process.env.PORT || 8080;
 
-app.use('/', require('./routes/index'));
+app.use(cors());
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+app.use(express.static(path.join(__dirname, '../frontend')));
+
+app.use(require('./routes'));
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '../frontend/index.html'));
 });
+
+mongodb.initDb((err) => {
+  if (err) {
+    console.log(err);
+  } else {
+    app.listen(port, () => {
+      console.log(`MongoDB connected, server running on http://localhost:${port}`);
+    });
+  }
+}) 
