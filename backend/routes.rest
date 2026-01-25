@@ -2,8 +2,43 @@
 ###
 GET http://localhost:8080/contacts
 ###
-GET http://localhost:8080/contacts/622023f642f9ab4cd6e060b2 
+GET http://localhost:8080/contacts/696c340ec79c110e049c4e98 
 ### 
+
+POST /contacts HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+  "firstName": "Hyrum",
+  "lastName": "baker",
+  "email": "hyrumbaker@test.com",
+  "favoriteColor": "Blue",
+  "birthday": "01/05/2002"
+}
+
+
+###
+PUT /contacts/697535e2cc0eac82a8b0382b HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+  "firstName": "Hyrum",
+  "lastName": "Baker",
+  "email": "hyrumbaker@test.com",
+  "favoriteColor": "Red",
+  "birthday": "01/05/2002"
+}
+
+###
+
+DELETE /contacts/697535e2cc0eac82a8b0382b HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+###
+
 GET http://localhost:8080/contacts/622023f642f9ab4cd6e060b3 
 ### 
 GET http://localhost:8080/contacts/622023f642f9ab4cd6e060b4
