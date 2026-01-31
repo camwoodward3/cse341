@@ -19,7 +19,7 @@ Content-Type: application/json
 
 
 ###
-PUT /contacts/697535e2cc0eac82a8b0382b HTTP/1.1
+PUT /contacts/697e67c7a2c18a22b7823d59 HTTP/1.1
 Host: localhost:8080
 Content-Type: application/json
 
@@ -33,7 +33,7 @@ Content-Type: application/json
 
 ###
 
-DELETE /contacts/697535e2cc0eac82a8b0382b HTTP/1.1
+DELETE /contacts/697e67c7a2c18a22b7823d59 HTTP/1.1
 Host: localhost:8080
 Content-Type: application/json
 
